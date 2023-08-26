@@ -20,6 +20,7 @@ body{
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
+        margin-right: 76px;
 
         }
 .text-logo{
@@ -40,6 +41,19 @@ body{
 ul,ol
 {
     list-style-type: none;
+    padding-left: 0;
+    margin-top:0 ;
+    margin-bottom:0 ;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+button{
+    cursor: pointer;
+}
+img{
+    display: block;
 }
 .item-nav:active,
 .list-contacts-item:active,
@@ -49,6 +63,43 @@ ul,ol
 .list-contacts-item:focus
 {
 color: #404BBF;
+}
+/*загальний контейнер до всіх секцій*/
+.container {
+    width: 1158px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+/*робимо флексами елементи щоб вони ставали в рядок*/
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.main-navigation {
+    display: flex;
+    column-gap: 40px;
+}
+
+.main-contacts {
+    display: flex;
+    
+    column-gap: 40px;
+}
+
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px; ;
 }
 
 .contacts-header{
@@ -66,6 +117,7 @@ color: #404BBF;
 /* секція hero*/
 .hero-section{
     background-color: #2E2F42;
+    text-align: center;
 }
 .head-title {
     font-size: 56px;
@@ -74,6 +126,7 @@ color: #404BBF;
     letter-spacing: 0.02em;
     color: #FFF;
     text-align: center;
+   
 }
 .button-hero {
         color: #FFF;
@@ -88,16 +141,46 @@ color: #404BBF;
 }
  .button-hero:hover,.button-hero:focus{
     background-color:#404BBF;
-    color:#FFF;
- } 
+    color:#FFF;}
+    
+    /*прихований заголовок*/
+    .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+ 
  .title-under-hero{
          font-size: 20px;
          font-weight: 500;
         line-height:1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+       
         
  }
+ .item-under-hero{
+    display: flex;
+    column-gap: 24px;
+   
+ }
+  .under-hero{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .list-item{
+    width: calc((100%-3*24)/4);
+    margin-bottom: 8px;
+  }
+
+ 
 .text-under-hero{
         font-size: 16px;
         line-height: 1.5;
@@ -107,6 +190,14 @@ color: #404BBF;
 }
 .section-personel{
     background-color: #F4F4FD;
+    padding-top: 60px;
+    padding-bottom: 60;
+}
+.list-personnel{
+    display: flex;
+    column-gap: 24px;
+    width: calc((100%-3*24)/4);
+    justify-content: space-between;
 }
 .title-personnel{
         font-size: 36px;
@@ -116,6 +207,7 @@ color: #404BBF;
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 .name-personel{
         font-size: 20px;
@@ -125,6 +217,8 @@ color: #404BBF;
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 8px;
+        margin-top: 32px;
     
 }
  .list-item-personel {
@@ -134,20 +228,43 @@ color: #404BBF;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-align: center;
 }
-.menu-portfolio-title{
+.portfolio-section{
+    margin-bottom: 60px;
+        margin-top: 60px;
+        
+
+
+}
+.portfolio-container{
+    flex-wrap: wrap;
+}
+.list-portfolio{
+    display: flex;
+        column-gap: 24px;
+        width: calc((100%-5*24)/6);
+        justify-content: space-between;
+       
+
+}
+.menu-portfolio-title
+{
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
         text-transform: capitalize;
-        text-align: center;
+        text-align: left;
+        margin-top: 32px;
+        margin-bottom: 8px;
 }
 .menu-portfolio-text{
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-align: left;
 }
 .section-footer{
     background-color: #2E2F42;
@@ -174,4 +291,5 @@ color: #404BBF;
         color: #F4F4FD;
 
          }
+         
          
