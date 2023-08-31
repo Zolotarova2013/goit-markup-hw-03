@@ -189,10 +189,10 @@ color: #404BBF;
   .under-hero{   
     padding: 120px 0;
   }
-  /*.list-item{
+  .list-item{
     width: calc((100% - 3 * 24) / 4);
     
-  }*/
+  }
 
  
 .text-under-hero{
@@ -234,13 +234,14 @@ color: #404BBF;
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
+        margin: bottom 8px;
        
     
 }
  .list-item-personel {
     background-color: #FFFFFF;
    
-    /*width: ((100% - 72px) / 4);*/
+    width: ((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 
  }
@@ -288,7 +289,8 @@ color: #404BBF;
         color: #2E2F42;
         text-transform: capitalize;
         text-align: left;
-        
+        margin: bottom 8px;
+      /* margin пункт на LMS платформі*/  
 }
 .menu-portfolio-text{
         font-size: 16px;
