@@ -210,7 +210,7 @@ color: #404BBF;
 .list-personnel{
     display: flex;
     gap: 24px;
-    width: calc((100%-3*24)/4);
+   /* width: calc((100%-3*24)/4);*//**/
     
 }
 .title-personnel{
